@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet"> 
+    <style>
+       * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.p1 {
+    background-color: blue;
+    text-align: center;
+}
+
+.p2 {
+    background-color: red;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.controle {
+    background-color: bisque;
+    height: 10vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.controlBtn {
+    margin-top: 1.1rem;
+    width: 600px;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 90vh;
+}
+
+.score1 {
+    margin-top: 30%;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.score2 {
+    margin-top: 30%;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.dice1 {
+    padding-top: 10px;
+    color: white;
+    font-size:1.5rem;
+}
+
+.dice2 {
+    padding-top: 10px;
+    color: white;
+    font-size:1.5rem;
+}
+
+p {
+    margin-top: 20px;
+    color: white;
+    font-size: 2rem;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Propriedades do CONTAINER
+        * grid-template-columns
+        * grid-template-rows
+        * grid-gap
+          - grid-row-gap 
+          - grid-column-gap 
+        * grid-template-areas
+        ... E mais 4 props de alinhamento 
+
+        Propriedades dos ITEMS 
+        * grid-column 
+          - grid-column-start
+          - grid-column-end
+        * grid-row 
+          - grid-row-start
+          - grid-row-end
+        * grid-area
+        ... E mais 2 propriedades de alinhamento
+    
+    -->
+   
+    
+    <div class="container">
+       <div class="p1">
+           <h2>Player 1</h2>
+           <hr>
+           <p>Tirou:</p>
+           <div class="dice1"></div>
+           <div class="score1">0</div>
+       </div>   
+       <div class="p2">
+           <h2>Player 2</h2>
+           <hr>
+           <p>Tirou:</p>
+           <div class="dice2"></div>
+           <div class="score2">0</div>
+       </div>
+    </div>
+    <div class="controle">
+        <button class="controlBtn">Play</button>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
