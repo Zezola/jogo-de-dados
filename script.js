@@ -18,15 +18,5 @@ const btn = document.querySelector('.controlBtn').addEventListener('click', () =
         vitorias1.innerHTML++;
     } else if (dice1 < dice2) {
         vitorias2.innerHTML++;
-    } else {
-        console.log('EMPATE')
     }
 })
-
-/*
-const btn = document.querySelector('.controlBtn').addEventListener('click', () => {
-    vitorias1 += 1;
-    console.log(vitorias1)
-    vitorias1.innerHTML  = 5
-
-}) */
